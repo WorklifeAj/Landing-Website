@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<!--
+    Forty by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Projects - AJ Journals</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="favicon" href="images/profilePic.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <style>
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 0 20px;
+            /* Add spacing on left and right */
+        }
+
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .project-item .image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            /* Ensure images fill the space without distortion */
+            border-radius: 4px;
+        }
+
+        .project-item .content {
+            padding: 1rem;
+        }
+
+        /* Maintain 2x2 grid for screens larger than 568px */
+        @media (min-width: 568px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Switch to single-column layout for screens smaller than 980px */
+        @media (max-width: 980px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-item .image a:hover {
+            opacity: 0.7;
+        }
+
+        .spotlight.style1 .image {
+            width: 100%;
+            /* Full width of the container */
+            height: 300px;
+            /* Set a fixed height for images */
+            overflow: hidden;
+            /* Hide overflow to maintain aspect ratio */
+            position: relative;
+            /* Position relative for absolute positioning of img */
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Center the skills container */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            background-color: #000000;
+            opacity: 1;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .skill-item:hover {
+            transform: scale(1.1);
+            background-color: rgb(0, 0, 0);
+            border: 1px solid white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .skill-item p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Ensure a maximum of 4 skills per row */
+        @media (min-width: 768px) {
+            .skills {
+                max-width: calc(150px * 4 + 20px * 3);
+                /* Adjust for 4 items per row */
+                margin: 0 auto;
+                /* Center the skills container */
+            }
+        }
+
+        .inverted {
+            filter: invert(1);
+        }
+
+        .email-me-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            /* Rounded corners */
+            text-decoration: none;
+            color: white;
+            /* Adjust color as needed */
+            background-color: #007BFF;
+            /* Primary color */
+            transition: background-color 0.3s ease;
+        }
+
+        .email-me-btn:hover {
+            background-color: #0056b3;
+            /* Darker shade on hover */
+        }
+
+        .email-icon {
+            display: inline-block;
+            margin-right: 8px;
+            /* Spacing between icon and text */
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo"><strong>AJ</strong> <span>JOURNALS</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="projects.html">Projects</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<li>
+					<a href="mailto:ayajala@ttu.edu" id="email-me" class="button email-me-btn primary fit">
+						<span class="email-icon"><i class="fas fa-envelope"></i></span> Email Me
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div style="display: flex; align-items: center; justify-content: center; padding: 10px;">
+                <h1>Projects</h1>
+            </div>
+
+            <section id="one" class="spotlights style1 projects">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="image">
+                        <a href="https://github.com/kenny5144/thevolunteerappnext">
+                            <img src="images/volunteer.png"
+                                alt="A Really Fast Train" />
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>Volunteer App</h3>
+                            </header>
+                            <p>Volunteer App Next is an innovative platform designed to empower students by connecting them with community service opportunities. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <div class="image">
+                        <a href="https://github.com/worklifeaj/SyntaxParser">
+                            <img src="images/token.png"
+                                alt="An Airport Terminal" />
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>Syntax Parser</h3>
+                            </header>
+                            <p>Created a recursive descent parser in C++, validating syntax of source code files with advanced parsing algorithm(multiprocessing)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="image">
+                        <a href="https://github.com/worklifeaj/LoanCalculator">
+                            <img src="images/loancalc.png"
+                                alt="Hyperspace Travel" />
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>Loan Calculator</h3>
+                            </header>
+                            <p>Built a user-centric and personalized loan calculator using Java FX that lets individuals estimate monthly payments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item">
+                    <div class="image">
+                        <!-- <a href=""> -->
+                            <img src="images/hardware.jpg"
+                                alt="Ayobami Ajala" />
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>Sequential Machine (PLD)</h3>
+                            </header>
+                            <p>Conceptualized and executed a sequential machine using the ATF16v8C (PLD) to match system capabilities for varied requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills">
+            <div style="display: flex; align-items: center; justify-content: center; padding: 10px;">
+                <h1>My Skills</h1>
+            </div>
+            <section class="skills">
+                <!-- Skill 1 -->
+                <div class="skill-item">
+                    <img src="images/svgs/icons8-html5.svg" alt="HTML5" />
+                    <p>HTML5</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-item">
+                    <img src="images/svgs/css-3-svgrepo-com.svg" alt="CSS3" />
+                    <p>CSS3</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-item">
+                    <img src="images/svgs/js-svgrepo-com.svg" alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-item">
+                    <img src="images/svgs/react-javascript-js-framework-facebook-svgrepo-com.svg" alt="React" />
+                    <p>React</p>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-item">
+                    <img class="inverted" src="images/svgs/next-dot-js-svgrepo-com.svg" alt="Next.js" />
+                    <p>Next.js</p>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-item">
+                    <img src="images/svgs/tailwind-svgrepo-com.svg" alt="Tailwind CSS" />
+                    <p>Tailwind CSS</p>
+                </div>
+
+                <!-- Skill 7 -->
+                <div class="skill-item">
+                    <img src="images/svgs/node-svgrepo-com.svg" alt="Node.js" alt="Node.js" />
+                    <p>Node.js</p>
+                </div>
+
+                <!-- Skill 8 -->
+                <div class="skill-item">
+                    <img src="images/svgs/firebase-svgrepo-com.svg" alt="Firebase" />
+                    <p>Firebase</p>
+                </div>
+
+                <!-- Skill 9 -->
+                <div class="skill-item">
+                    <img src="images/svgs/python-svgrepo-com.svg" alt="Python" />
+                    <p>Python</p>
+                </div>
+
+                <!-- Skill 10 -->
+                <div class="skill-item">
+                    <img src="images/svgs/sql-database-generic-svgrepo-com.svg" alt="SQL" />
+                    <p>SQL</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <br>
+            <div class="wrapper style1 align-center">
+                <ul class="icons">
+                    <li><a href="https://github.com/worklifeaj" class="icon brands alt fa-github"><span
+                                class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/ayobamiajala" class="icon brands alt fa-linkedin-in"><span
+                                class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; AJ Journals</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

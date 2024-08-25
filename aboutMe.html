@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<!--
+		Forty by HTML5 UP
+		html5up.net | @ajlkn
+		Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	-->
+<html>
+
+<head>
+	<title>ABOUT ME - AJ Journals</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		/* body, #header, #menu, #banner {
+				width: auto;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
+			@media (min-width: 1024px) {
+				body,header {
+					max-width: 1200px;
+					padding: 0 40px;
+				}
+			}
+
+			@media (min-width: 1440px) {
+				body {
+					max-width: 1400px;
+					padding: 0 60px;
+				}
+			}
+
+			@media (min-width: 1600px) {
+				body {
+					max-width: 1600px;
+					padding: 0 80px;
+				}
+			} */
+		.profile-circle {
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			position: absolute;
+			top: -40px;
+			right: 0px;
+		}
+
+		video {
+			width: 100%;
+			height: 100%;
+			max-width: 100%;
+			margin: auto;
+		}
+
+		@media (min-width:738px) {
+			.profile-circle {
+				top: -55px;
+				width: 140px;
+				height: 140px;
+			}
+		}
+
+		@media (min-width:1200px) {
+			.profile-circle {
+				top: -90px;
+				width: 180px;
+				height: 180px;
+			}
+		}
+
+		/* Icon styles */
+		.icon.style2:before {
+			box-shadow: inset 0 0 0 1px white;
+		}
+
+		.icon.major:before {
+			font-size: 1.25rem;
+		}
+
+		.icon.style2:before {
+			border-radius: 2.75em;
+			display: inline-block;
+			height: 2.75em;
+			line-height: 2.75em;
+			width: 2.75em;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.fa-chart-bar:before {
+			content: "\f080";
+		}
+
+		@media (min-width: 760px) {
+			.spotlight.style1 .content {
+				padding: 7rem 7rem 5rem 7rem;
+				-moz-align-self: center;
+				-webkit-align-self: center;
+				-ms-align-self: center;
+				align-self: center;
+				-moz-flex-grow: 1;
+				-webkit-flex-grow: 1;
+				-ms-flex-grow: 1;
+				flex-grow: 1;
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				width: 35%;
+				max-width: 64rem;
+				margin: 0 auto;
+			}
+
+			@media screen and (max-width: 980px) {
+				.spotlight.style1 .content {
+					padding: 3.75rem 3rem 1.75rem 3rem;
+					width: 50%;
+					min-width: 0;
+				}
+			}
+
+			@media screen and (max-width: 1280px) {
+				.spotlight.style1 .content {
+					padding: 4rem 4rem 2rem 4rem;
+				}
+			}
+
+			@media screen and (max-width: 1680px) {
+				.spotlight.style1 .content {
+					padding: 5rem 5rem 3rem 5rem;
+				}
+			}
+
+			.spotlight.style1 {
+				-moz-align-items: -moz-stretch;
+				-webkit-align-items: -webkit-stretch;
+				-ms-align-items: -ms-stretch;
+				align-items: stretch;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex-direction: row;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-moz-justify-content: -moz-flex-end;
+				-webkit-justify-content: -webkit-flex-end;
+				-ms-justify-content: -ms-flex-end;
+				justify-content: flex-end;
+				position: relative;
+				overflow-x: hidden;
+				text-align: left;
+			}
+
+
+
+			.image.videos {
+				border: 0;
+				border-radius: 4px;
+				display: inline-block;
+				position: relative;
+			}
+
+			.spotlight .image {
+				background-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.spotlight.style1 .image {
+				-moz-flex-grow: 0;
+				-webkit-flex-grow: 0;
+				-ms-flex-grow: 0;
+				flex-grow: 0;
+				-moz-flex-shrink: 0;
+				-webkit-flex-shrink: 0;
+				-ms-flex-shrink: 0;
+				flex-shrink: 0;
+				width: 60%;
+				height: 400px;
+				min-width: 25rem;
+				border-radius: 0;
+			}
+
+			@media screen and (max-width: 980px) {
+				.spotlight.style1 .image {
+					width: 50%;
+					min-width: 0;
+				}
+			}
+
+			.image video {
+				display: block;
+				border-radius: 4px;
+			}
+
+			.spotlight.onscroll-image-fade-in .image video {
+				-moz-transition: opacity 0.75s ease-in-out;
+				-webkit-transition: opacity 0.75s ease-in-out;
+				-ms-transition: opacity 0.75s ease-in-out;
+				transition: opacity 0.75s ease-in-out;
+			}
+
+			.spotlight.style1 .image video {
+				-moz-object-fit: cover;
+				-webkit-object-fit: cover;
+				-ms-object-fit: cover;
+				object-fit: cover;
+				-moz-object-position: center;
+				-webkit-object-position: center;
+				-ms-object-position: center;
+				object-position: center;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 0;
+			}
+
+			@media screen and (max-width: 736px) and (orientation: portrait) {
+				.spotlight.style1 .image video {
+					position: relative;
+				}
+			}
+
+			@media screen and (max-width: 736px) and (orientation: portrait) {
+				.spotlight.style1 .image {
+					width: 100%;
+				}
+			}
+
+		}
+
+		/* Custom styles for buttons */
+		.actions .button.wide {
+			display: inline-block;
+			width: 100%;
+			/* Make the button take up 100% of the container width */
+			max-width: 300px;
+			/* Set a maximum width */
+			padding: 1rem 2rem;
+			/* Adjust padding for better appearance */
+			text-align: center;
+			margin: 0 auto;
+			/* Center the button */
+			box-sizing: border-box;
+			/* Ensure padding doesn't affect the total width */
+		}
+
+		/* Adjust for smaller screens */
+		@media screen and (max-width: 980px) {
+			.actions .button.wide {
+				max-width: 100%;
+				/* Ensure button fits within smaller screens */
+			}
+		}
+
+		.wrapper {
+			padding-bottom: 40px;
+		}
+
+		#wrapper {
+			margin-top: 40px;
+		}
+
+		#interests {
+			padding-top: 50px;
+			padding-bottom: 200px;
+		}
+
+		#interests .inner h2 {
+			font-size: 44px;
+			padding-bottom: 20px;
+		}
+
+		#experience {
+			padding-top: 60px;
+			padding-bottom: 180px;
+		}
+
+		@media screen and (max-width: 1280px) {
+			header.major> :first-child:after {
+				content: none;
+			}
+		}
+
+		article a img {
+			object-fit: cover;
+			width: 100%;
+			height: 400px;
+		}
+
+		@media (max-width:600px) {
+			article a img {
+				height: 300px;
+			}
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			input[type="submit"],
+			input[type="reset"],
+			input[type="button"],
+			button,
+			.button {
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				-ms-appearance: none;
+				appearance: none;
+				-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+				background-color: transparent;
+				border: 0;
+				border-radius: 0;
+				box-shadow: inset 0 0 0 2px #ffffff;
+				color: #ffffff;
+				cursor: pointer;
+				display: inline-block;
+				font-size: 0.8em;
+				font-weight: 600;
+				height: 3.5em;
+				letter-spacing: 0.25em;
+				line-height: 3.5em;
+				padding: 0 4.75em;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				white-space: nowrap;
+			}
+		}
+
+		.email-me-btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 18px;
+			/* Rounded corners */
+			text-decoration: none;
+			color: white;
+			/* Adjust color as needed */
+			background-color: #007BFF;
+			/* Primary color */
+			transition: background-color 0.3s ease;
+		}
+
+		.email-me-btn:hover {
+			background-color: #0056b3;
+			/* Darker shade on hover */
+		}
+
+		.email-icon {
+			display: inline-block;
+			margin-right: 8px;
+			/* Spacing between icon and text */
+		}
+
+	</style>
+	
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<!-- Note: The "styleN" class below should match that of the banner element. -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>AJ</strong> <span>JOURNALS</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="projects.html">Projects</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<li>
+					<a href="mailto:ayajala@ttu.edu" id="email-me" class="button email-me-btn primary fit">
+						<span class="email-icon"><i class="fas fa-envelope"></i></span> Email Me
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+		<!-- Note: The "styleN" class below should match that of the header element. -->
+		<section id="banner" class="style2">
+			<div class="inner">
+				<span class="image">
+					<img src="images/pic07.jpg" alt="Ayobami Ajala" />
+				</span>
+				<header class="major">
+					<h1>ABOUT ME</h1>
+					<img src="images/profilePic.png" alt="Ayobami Ajala" class="profile-circle">
+				</header>
+			</div>
+	</div>
+	</section>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section id="one">
+			<div class="inner">
+				<!-- <header class="major">
+					<h2>BRIEF INFO</h2> -->
+				</header>
+				<p> I am Ayobami Ajala (AJ), a Senior pursuing a Computer science degree with a minor in Mathematics at
+					Texas Tech university.
+					My goal is to bring accessibility to all users. I aim to understand customer behavior, learn new
+					technologies and drive results while growing in a team.</p>
+			</div>
+		</section>
+
+		<section id="interests" class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>Interests</h2>
+			</div>
+
+			<!-- Gallery -->
+
+
+			<div class="gallery style2 medium lightbox onscroll-fade-in">
+				<article>
+					<a href="images/basketball.jpg" class="image">
+						<img src="images/basketball.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Sports</h3>
+						<p>Houston Rockets vs Atlanta Hawks.</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/art boy.jpg" class="image">
+						<img src="images/art boy.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Art</h3>
+						<p>A picture tells many stories. A good painting tells more</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/trading.jpg" class="image">
+						<img src="images/trading.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Trading</h3>
+						<p>Financial markets are interesting. We do not predict the market we react to it.</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+
+				<article>
+					<a href="images/honeywell.jpg" class="image">
+						<img src="images/honeywell.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Learning</h3>
+						<p>Would never turn down an opportunity to gain experience.</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/swe conference.jpg" class="image">
+						<img src="images/swe conference.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Networking</h3>
+						<p>Catch me at the next conference.</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/atl trip.jpg" class="image">
+						<img src="images/atl trip.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Travel</h3>
+						<p>My goal is to travel around the world and experience new cultures.</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/football.jpg" class="image">
+						<img src="images/football.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Soccer</h3>
+						<p>Ball is Life. Road to glory</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/music.jpg" class="image">
+						<img src="images/music.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Music</h3>
+						<p>Afrobeats all the way. Shout out 419ers</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/azure certification.jpg" class="image">
+						<img src="images/azure certification.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Cloud</h3>
+						<p>New Technologies are life savers</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gym.jpg" class="image">
+						<img src="images/gym.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Gym</h3>
+						<p>My safe space</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/Relaxation & fun.jpg" class="image">
+						<img src="images/Relaxation & fun.jpg" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Fun</h3>
+						<p>Relax with friends and family</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/ttu.png" class="image">
+						<img src="images/ttu.png" alt="Ayobami Ajala">
+					</a>
+					<div class="caption">
+						<h3>Product Manager</h3>
+						<p>Ideation and creation is the ultimate goal</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+
+			</div>
+	</div>
+
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="spotlights style1">
+		<!-- Project 3 -->
+		<section id="experience" class="spotlight style1">
+			<div class="image videos">
+				<video src="images/me video.mp4" autoplay muted playsinline loop>
+					Your browser does not support the video tag.
+				</video>
+
+			</div>
+
+			<div class="content">
+				<div class="inner">
+					<header class="major">
+						<h3>BUILDER</h3>
+					</header>
+					<p></p>
+					<ul class="actions">
+						<li><a href="https://drive.google.com/file/d/19dzf2x5WjgUTxhDTyN50QwbLAizDto-I/view?usp=sharing" class="button">RESUME</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="spotlight style1">
+			<div class="image videos">
+				<video src="images/linkedin vid.mp4" autoplay muted playsinline loop>
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="content">
+				<div class="inner">
+					<header class="major">
+						<h3>VISIONARY</h3>
+					</header>
+					<p></p>
+					<ul class="actions">
+						<li><a href="https://www.linkedin.com/in/ayobamiajala/" class="button">Connect with me</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</section>
+	</div>
+
+
+	<section id="wrapper" class="wrapper style1 align-center">
+		<div class="inner color1">
+			<h2>Milestones</h2>
+			<div class="items style1 medium onscroll-content-fade-in">
+				<section class="onscroll-content-fade-in">
+					<span class="icon solid style2 major fa-medal"></span>
+					<h3>May'24</h3>
+					<b>Current Internship</b><p>Software Engineer Intern for a technology company</p>
+				</section>
+				<section class="onscroll-content-fade-in">
+					<span class="icon solid style2 major fa-trophy"></span>
+					<h3>April'24</h3>
+					<b>ColorStack TTU Founding</b><p>Mentor select underclassmen to help land tech internships</p>
+				</section>
+				<section class="onscroll-content-fade-in">
+					<span class="icon solid style2 major fa-certificate"></span>
+					<h3>Sep'23</h3>
+					<b>First Externship</b><p>Drove market research for a non-profit projecting a $5M increase in donations</p>
+				</section>
+				<section class="onscroll-content-fade-in">
+					<span class="icon solid style2 major fa-crown"></span>
+					<h3>Feb'22</h3>
+					<b>First Hackathon</b><p>HackWesTX attendee: exposed to coding stacks in Texas</p>
+				</section>
+				<section class="onscroll-content-fade-in">
+					<span class="icon solid style2 major fa-briefcase"></span>
+					<h3>August'21</h3>
+					<b>First Job</b><p> Led weekly bonding programs to 300+ students/staff</p>
+				</section>
+				<section class="onscroll-content-fade-in">
+					<span class="icon solid style2 major fa-star"></span>
+					<h3>Jan'21</h3>
+					<b>College Acceptance</b><p> Computer Science student at Texas Tech University </p>
+				</section>
+			</div>
+		</div>
+	</section>
+
+	<!-- Three -->
+	<section id="three">
+		<div class="inner" style="display: flex; align-items: center; justify-content: center; padding-top: 12px;">
+			<ul class="actions">
+				<li><a href="projects.html" class="button email-me-btn primary fit">PROJECTS</a></li>
+			</ul>
+		</div>
+	</section>
+
+
+	</div>
+	<!-- Footer -->
+	<footer id="footer">
+		<br>
+		<div class="wrapper style1 align-center">
+			<ul class="icons">
+				<li><a href=https://github.com/worklifeaj class="icon brands alt fa-github"><span
+							class="label">GitHub</span></a></li>
+				<li><a href=https://www.linkedin.com/in/ayobamiajala class="icon brands alt fa-linkedin-in"><span
+							class="label">LinkedIn</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; AJ Journals</li>
+			</ul>
+		</div>
+	</footer>
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		// Smooth scrolling for anchor links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				const target = document.querySelector(this.getAttribute('href'));
+				const wrapper = document.getElementById('wrapper');
+
+				wrapper.classList.remove('is-transitioning');
+				wrapper.classList.add('done');
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+	</script>
+
+</body>
+
+</html>
